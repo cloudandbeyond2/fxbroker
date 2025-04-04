@@ -76,7 +76,7 @@ const ContactUsPage = () => {
         <div className="container">
           <div className="text-center mb-60">
             <h5 className="fw-semibold text-primary mb-3">Contact Us</h5>
-            <h2 className="display-4 fw-semibold">Let Me Help You</h2>
+            <h2 className="display-4 fw-semibold">Let Me Helping You</h2>
           </div>
           <div className="row g-4 g-xl-4 pb-120">
             <div className="col-md-6 col-lg-4">
