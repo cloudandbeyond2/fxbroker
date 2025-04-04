@@ -1,0 +1,43 @@
+$btn-border-radius: 50px;
+$btn-padding-x: 16px;
+$btn-padding-y: 10px;
+$btn-font-size: 14px;
+$btn-font-weight: 500;
+$btn-color: #222e48;
+
+$primary: #0050db;
+$secondary: #fdad00;
+$success: #2fa75f;
+
+// breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1600px,
+);
+// gutters
+$breadcrumb-divider-color: #ffffff;
+$breadcrumb-active-color: $secondary;
+$breadcrumb-divider: quote(">");
+$popover-max-width: 600px;
+$spacer: 1rem;
+$gutters: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4.5,
+  7: $spacer * 6,
+  8: $spacer * 7.5,
+  9: $spacer * 9,
+  10: $spacer * 10,
+);
+
+/* libs */
+@import "bootstrap/scss/bootstrap";

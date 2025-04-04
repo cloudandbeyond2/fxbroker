@@ -1,0 +1,26 @@
+.time-horizon {
+  background-color: rgba(var(--primary), 0.05);
+  .box {
+    border: 2px solid rgb(var(--neutral-30));
+  }
+}
+
+.radio-container {
+  max-width: 856px;
+  margin: 0 auto;
+}
+
+.form-check {
+  cursor: pointer;
+  .form-check-input {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.top-brokers {
+  h2 {
+    border-bottom: 1px dashed rgb(var(--neutral-30));
+  }
+}

@@ -1,0 +1,174 @@
+.f-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.max-unset {
+  @include min-width(1600px) {
+    max-width: unset !important;
+  }
+}
+
+.max-636 {
+  max-width: 636px;
+  margin: 0 auto;
+}
+
+.pt-120 {
+  padding-top: 60px;
+  @include min-width(1200px) {
+    padding-top: 120px;
+  }
+}
+
+.pb-120 {
+  padding-bottom: 60px;
+  @include min-width(1200px) {
+    padding-bottom: 120px;
+  }
+}
+
+.pb-60 {
+  padding-bottom: 40px;
+  @include min-width(1200px) {
+    padding-bottom: 60px;
+  }
+}
+.pt-60 {
+  padding-top: 40px;
+  @include min-width(1200px) {
+    padding-top: 60px;
+  }
+}
+.pt-40 {
+  padding-top: 28px;
+  @include min-width(1200px) {
+    padding-top: 40px;
+  }
+}
+
+.pb-80 {
+  padding-bottom: 50px;
+  @include min-width(1200px) {
+    padding-bottom: 80px;
+  }
+}
+
+.pt-80 {
+  padding-top: 50px;
+  @include min-width(1200px) {
+    padding-top: 80px;
+  }
+}
+
+.mb-32 {
+  margin-bottom: 20px;
+  @include min-width(1200px) {
+    margin-bottom: 32px;
+  }
+}
+
+.mb-40 {
+  margin-bottom: 20px;
+  @include min-width(1200px) {
+    margin-bottom: 32px;
+  }
+  @include min-width(1400px) {
+    margin-bottom: 40px;
+  }
+}
+
+.mb-60 {
+  margin-bottom: 40px;
+  @include min-width(1200px) {
+    margin-bottom: 60px;
+  }
+}
+.mb-120 {
+  margin-bottom: 60px;
+  @include min-width(1200px) {
+    margin-bottom: 120px;
+  }
+}
+.br-dashed {
+  border-right: 1px dashed rgba(var(--secondary), 0.6);
+}
+.br-right-white {
+  @include min-width(579px) {
+    border-right: 1px solid rgba(var(--neutral-0), 0.4);
+  }
+}
+.bb-n40 {
+  border-bottom: 1px solid rgb(var(--neutral-40));
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  @include min-width(1200px) {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.br-n30 {
+  border-right: 1px solid rgb(var(--neutral-30));
+}
+.select-none {
+  user-select: none;
+}
+
+// border bottom dashed
+.bb-dashed {
+  border-bottom: 1px dashed rgb(var(--neutral-40));
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  @include min-width(1200px) {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.list-disc {
+  list-style-type: disc;
+  padding-left: 16px;
+  @include min-width(1200px) {
+    padding-left: 24px;
+  }
+}
+.list-number {
+  list-style-type: decimal;
+  padding-left: 16px;
+  @include min-width(1200px) {
+    padding-left: 24px;
+  }
+}
+// range slider
+
+.range-slider {
+  --show-min-max: none;
+  --step: 1;
+  --text-value: "75";
+  &.value-2 {
+    --value: 2;
+  }
+  position: relative;
+  width: 100%;
+}
+
+.gap-40 {
+  gap: 24px;
+  @include min-width(1200px) {
+    gap: 40px;
+  }
+}
+
+.readonly {
+  pointer-events: none;
+}
+
+.object-center {
+  object-position: center;
+}

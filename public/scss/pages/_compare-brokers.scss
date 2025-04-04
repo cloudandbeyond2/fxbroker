@@ -1,0 +1,65 @@
+.compare-brokers {
+  background-color: rgb(var(--neutral-0));
+  .search-bar {
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 8px 24px;
+    border: 1px solid rgb(var(--neutral-30));
+    background-color: rgb(var(--neutral-0));
+    input {
+      border: none;
+      background-color: transparent;
+      width: 100%;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  table {
+    tr {
+      th,
+      td {
+        padding: 12px 16px;
+        @include min-width(992px) {
+          padding: 16px 32px;
+        }
+      }
+      th {
+        background-color: rgb(var(--neutral-0));
+      }
+      &:nth-child(even) {
+        background-color: rgb(var(--neutral-0));
+      }
+      &:nth-child(odd) {
+        background-color: transparent;
+      }
+    }
+  }
+  .form-switch {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding-left: 0;
+    .form-check-input {
+      --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%27-4 -4 8 8%27%3e%3ccircle r=%273%27 fill=%27rgba%280, 0, 0, 0.75%29%27/%3e%3c/svg%3e");
+      transform: scale(1.5);
+      &:focus {
+        box-shadow: none;
+        border-color: rgb(var(--neutral-30));
+        background-image: var(--bs-form-switch-bg);
+      }
+      &:checked {
+        background-color: rgb(var(--secondary));
+        border-color: rgb(var(--secondary));
+      }
+    }
+    .form-check {
+      padding-left: 0;
+    }
+  }
+
+  .form-switch label {
+    margin-right: 50px !important;
+  }
+}

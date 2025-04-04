@@ -1,0 +1,379 @@
+.hero-three-wrapper {
+  @include min-width(992px) {
+    margin: 16px;
+    border-radius: 16px;
+  }
+  background-color: rgb(var(--neutral-0));
+  @include min-width(1200px) {
+    margin: 24px;
+  }
+}
+.hero-three {
+  @include min-width(992px) {
+    border-radius: 12px;
+  }
+  background-color: rgb(var(--neutral-0));
+  background-image: url(../../images/hero-three-bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 120px;
+  @include min-width(1200px) {
+    padding-top: 160px;
+  }
+  @include max-width(1600px) {
+    background-color: rgb(var(--neutral-904));
+  }
+  padding-bottom: 80px;
+  position: relative;
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+  form {
+    padding: 8px 8px 8px 32px;
+    background-color: rgba(var(--neutral-0), 0.1);
+    backdrop-filter: blur(4px);
+    border-radius: 60px;
+    border: 1px solid rgba(var(--neutral-0), 0.1);
+    display: flex;
+    justify-content: space-between;
+    @include max-width(579px) {
+      .choices {
+        width: 100%;
+      }
+      padding: 8px;
+      border-radius: 12px;
+      flex-direction: column;
+      gap: 12px;
+      justify-content: center;
+      align-items: start;
+      a {
+        width: 100%;
+      }
+    }
+    select,
+    input {
+      background-color: transparent;
+      color: rgb(var(--neutral-0));
+      padding: 10px 0;
+      &::placeholder {
+        color: rgb(var(--neutral-0));
+      }
+      &:focus {
+        outline: none;
+      }
+      option {
+        color: rgb(var(--neutral-700));
+      }
+    }
+    @include min-width(580px) {
+      select {
+        min-width: 120px;
+      }
+    }
+  }
+  .hero-three-img {
+    position: relative;
+    .hero-video {
+      .play-btn {
+        animation: rotate 15s linear infinite;
+      }
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      top: 35%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+  }
+  @include min-width(1600px) {
+    .hero-three-img {
+      right: -20%;
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// success commitment
+.success-commitment {
+  @include min-width(992px) {
+    padding: 0 16px;
+  }
+  @include min-width(1200px) {
+    padding: 0 24px;
+  }
+  &.about-page {
+    padding: 0;
+    .inner {
+      background-color: rgb(var(--neutral-0));
+    }
+  }
+  .inner {
+    background-color: rgb(var(--neutral-904));
+    border-radius: 12px;
+  }
+  .brokers {
+    padding: 16px;
+    border-radius: 50px;
+    border: 1px solid rgba(var(--secondary), 0.3);
+    background-color: rgba(var(--secondary), 0.05);
+    .users {
+      display: flex;
+      img,
+      .plus {
+        border-radius: 50%;
+        flex-shrink: 0;
+        background-color: rgb(var(--secondary));
+        width: 48px;
+        margin-right: -24px;
+        height: 48px;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgb(var(--neutral-700));
+      }
+    }
+  }
+  .left-side {
+    @include min-width(1600px) {
+      transform: translateX(-16%);
+    }
+  }
+}
+
+// top reason
+.top-reason {
+  margin: 0 8px;
+  @include min-width(992px) {
+    margin: 0 16px;
+  }
+  background-color: rgb(var(--neutral-0));
+  @include min-width(1200px) {
+    margin: 0 24px;
+  }
+  @include max-width(1600px) {
+    background-color: rgb(var(--neutral-904));
+  }
+  border-radius: 16px;
+  border-radius: 12px;
+  background-color: rgb(var(--neutral-0));
+  background-image: url(../../images/hero-three-bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  .rating-box {
+    border-radius: 12px;
+    border: 1px solid rgba(var(--neutral-0), 0.2);
+    background: rgba(var(--neutral-0), 0.1);
+    backdrop-filter: blur(10px);
+    padding: 16px;
+    @include min-width(1200px) {
+      padding: 24px;
+    }
+    max-width: max-content;
+  }
+}
+
+// compare brokers
+.compare-brokers {
+  background-color: rgb(var(--neutral-0));
+  .accordion-item {
+    border: none;
+    // background-color: rgb(var(--secondary));
+    box-shadow: none;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .accordion-item:first-of-type {
+    box-shadow: none;
+  }
+  .accordion-item:last-of-type {
+    box-shadow: none;
+  }
+  .accordion-button:not(.collapsed) {
+    color: rgb(var(--neutral-700));
+    box-shadow: none;
+    &::after {
+      background-image: url(../../images/minus-secondary.png);
+      transform: rotate(180deg);
+      left: 0;
+      position: absolute;
+    }
+  }
+  .accordion-button.collapsed::after {
+    transform: rotate(0deg);
+    left: 0;
+    position: absolute;
+    background-image: url(../../images/plus-primary.png);
+  }
+  .accordion-body {
+    padding: 0;
+    padding-top: 16px;
+    padding-left: 36px;
+  }
+  .accordion-button {
+    padding: 0;
+    padding-left: 36px;
+    background-color: transparent;
+    color: rgb(var(--neutral-700));
+    font-weight: 600;
+    &:focus {
+      box-shadow: none;
+    }
+    &::after {
+      transform: none !important;
+    }
+  }
+  .left-side {
+    position: relative;
+    .compare-two {
+      position: absolute;
+      bottom: 6%;
+      left: 4%;
+      @include min-width(1600px) {
+        left: -14%;
+      }
+    }
+    .award {
+      position: absolute;
+      top: 3%;
+      right: 4%;
+      @include min-width(1600px) {
+        right: -12%;
+      }
+      border: 2px solid rgb(var(--neutral-0));
+      border-radius: 8px;
+      padding: 12px 24px;
+      .icon {
+        width: 48px;
+        height: 48px;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: rgb(var(--neutral-0));
+      }
+    }
+  }
+  .right-side {
+    position: relative;
+    .compare-two {
+      position: absolute;
+      bottom: 6%;
+      right: 4%;
+      @include min-width(1600px) {
+        right: -14%;
+      }
+    }
+    .award {
+      position: absolute;
+      top: 3%;
+      left: 4%;
+      @include min-width(1600px) {
+        left: -12%;
+      }
+      border: 2px solid rgb(var(--neutral-0));
+      border-radius: 8px;
+      padding: 12px 24px;
+      .icon {
+        width: 48px;
+        height: 48px;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: rgb(var(--neutral-0));
+      }
+    }
+  }
+}
+
+// customer success
+.customer-success {
+  @include min-width(992px) {
+    padding: 0 16px;
+  }
+  @include min-width(1200px) {
+    padding: 0 24px;
+  }
+  .inner {
+    background-color: #002922;
+    border-radius: 12px;
+    .section-title {
+      max-width: 730px;
+      margin: 0 auto;
+    }
+    .content {
+      img {
+        width: 40px;
+        height: 40px;
+        @include min-width(400px) {
+          width: 60px;
+          height: 60px;
+        }
+      }
+      .desc {
+        font-size: 18px;
+        @include min-width(1200px) {
+          font-size: 24px;
+        }
+      }
+    }
+    .customer-nav {
+      position: absolute;
+      right: 0;
+      bottom: 6px;
+      z-index: 2;
+    }
+    .customer-prev,
+    .customer-next {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: transparent;
+      font-size: 1.3rem;
+      border: 1px solid rgba(var(--secondary), 0.5);
+      color: rgba(var(--secondary), 0.5);
+      &:hover {
+        background-color: rgb(var(--secondary));
+        color: rgb(var(--neutral-700));
+      }
+    }
+  }
+}
+
+// trusted partners
+.trusted-partner {
+  background-color: rgb(var(--neutral-0));
+}
+
+.footer-three {
+  @include min-width(992px) {
+    margin: 0 16px 16px;
+  }
+  background-color: rgb(var(--neutral-0));
+  @include min-width(1200px) {
+    margin: 0 24px 24px;
+  }
+  @include max-width(1600px) {
+    background-color: rgb(var(--neutral-904));
+  }
+  background-image: url(../../images/footer-three-bg.png);
+  background-size: 100% 100%;
+  .top-row {
+    border-bottom: 1px solid rgba(var(--neutral-0), 0.1);
+  }
+}

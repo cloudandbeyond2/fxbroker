@@ -1,0 +1,56 @@
+/* ===
+
+Theme Name: BrokR
+Theme URI: 
+Author: Pixelaxis
+Author URI: https://themeforest.net/user/pixelaxis
+Description: Broker Comparision affiliate website template
+Version: 1.0
+
+*/
+// libs
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "swiper/css/effect-fade";
+@import "vendor/bootstrap";
+@import "phosphor-icons/src/css/icons.css";
+@import "choices.js/src/styles/choices.scss";
+@import "@yaireo/ui-range";
+@import "react-modal-video/scss/modal-video.scss";
+
+// google fonts
+
+// Abstracts
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// Base
+@import "base/reset";
+@import "base/typography";
+@import "base/base";
+
+// Components
+@import "components/buttons";
+@import "components/components";
+
+// Layout
+@import "layout/header";
+@import "layout/footer";
+
+// Pages
+@import "pages/home";
+@import "pages/home-two";
+@import "pages/home-three";
+@import "pages/best-brokers";
+@import "pages/broker-reviews";
+@import "pages/find-my-broker";
+@import "pages/first-stock-trade";
+@import "pages/compare-brokers";
+@import "pages/brokerage-fee-calculator";
+@import "pages/asset-compass";
+@import "pages/scam-broker-shield";
+@import "pages/contact-us";
+@import "pages/blog";
+
+// Vendors

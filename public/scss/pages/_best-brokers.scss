@@ -1,0 +1,123 @@
+.hero-breadcrumb {
+  position: relative;
+  background-image: url(../../images/breadcrumb-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 150px;
+  padding-bottom: 70px;
+  @include min-width(1200px) {
+    padding-top: 220px;
+    padding-bottom: 120px;
+  }
+  &.extended {
+    @include min-width(1200px) {
+      padding-bottom: 200px;
+    }
+  }
+  &::after {
+    inset: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: 1;
+    background: linear-gradient(270deg, rgba(0, 41, 34, 0.3) 0%, rgba(0, 41, 34, 0.5) 34.88%, rgba(0, 41, 34, 0.7) 59.46%, rgba(0, 41, 34, 0.9) 99.04%);
+  }
+}
+
+// best brokers
+.filter-column {
+  @include max-width(992px) {
+    width: 300px;
+    position: absolute;
+    z-index: 3;
+    transform: translateX(-180%);
+    &.active {
+      transform: translateX(0);
+    }
+  }
+}
+.filter {
+  background-color: rgba(var(--primary), 0.05);
+  @include min-width(992px) {
+    padding: 12px;
+  }
+  border-radius: 8px;
+  border: 1px solid rgb(var(--neutral-30));
+  .inner {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: rgb(var(--neutral-0));
+    @include min-width(1200px) {
+      padding: 24px;
+    }
+    @include min-width(1400px) {
+      padding: 32px;
+    }
+    .search {
+      display: flex;
+      background-color: rgba(var(--primary), 0.05);
+      border: 1px solid rgb(var(--neutral-30));
+      border-radius: 50px;
+      padding: 12px 20px;
+      input {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        &::placeholder {
+          color: rgb(var(--neutral-700));
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+      button {
+        background-color: transparent;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.hero-breadcrumb-two {
+  position: relative;
+  background-color: rgb(var(--neutral-904));
+  .hero-el {
+    position: absolute;
+    display: none;
+    @include min-width(992px) {
+      display: block;
+    }
+    &.one {
+      top: 30%;
+      left: 5%;
+    }
+    &.two {
+      top: 30%;
+      left: 42%;
+    }
+    &.three {
+      bottom: 5%;
+      right: 6%;
+    }
+  }
+  padding-top: 110px;
+}
+
+.custom-popover {
+  width: 100%;
+  min-width: 300px;
+  @include min-width(768px) {
+    min-width: 450px;
+  }
+  @include min-width(1200px) {
+    min-width: 650px;
+  }
+  &.third {
+    @include min-width(1200px) {
+      min-width: 450px;
+    }
+  }
+  z-index: 5;
+}

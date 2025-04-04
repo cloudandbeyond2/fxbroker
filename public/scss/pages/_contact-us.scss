@@ -1,0 +1,48 @@
+.contact-box {
+  transition-duration: 300ms;
+  .icon {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(var(--secondary));
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  a {
+    text-decoration: underline;
+    font-weight: 600;
+    color: rgb(var(--primary));
+  }
+  &:hover {
+    background-color: rgb(var(--secondary));
+    .icon {
+      background-color: rgb(var(--neutral-700));
+      color: rgb(var(--secondary));
+    }
+  }
+}
+
+// contact form
+.contact-form {
+  input,
+  textarea {
+    border: 1px solid rgb(var(--neutral-30));
+    border-radius: 30px;
+    width: 100%;
+    padding: 12px 24px;
+    &:focus {
+      outline: none;
+      border: 1px solid rgb(var(--primary));
+    }
+  }
+}
+
+iframe {
+  &:focus {
+    outline: none;
+  }
+}
+
+.pristine-error {
+  color: rgb(242, 64, 64);
+  margin-top: 12px;
+}

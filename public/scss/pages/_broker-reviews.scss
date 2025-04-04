@@ -1,0 +1,124 @@
+.broker-reviews {
+  .nav-wrapper {
+    background-color: #f2f6fd;
+    padding: 12px 0;
+    top: 65px;
+    @include min-width(1200px) {
+      top: 83px;
+    }
+    z-index: 2;
+  }
+
+  .navigation-top {
+    padding: 8px;
+    border-radius: 50px;
+    border: 1px solid rgb(var(--neutral-30));
+    background-color: rgb(var(--neutral-0));
+    display: flex;
+    overflow-x: auto;
+    gap: 12px;
+    white-space: nowrap;
+    li a {
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-weight: 600;
+      display: inline-flex;
+      color: rgb(var(--neutral-700));
+      background-color: rgba(var(--primary), 0.05);
+      border: 1px solid rgb(var(--neutral-30));
+      &:hover {
+        background-color: rgb(var(--secondary));
+      }
+      &.active {
+        background-color: rgb(var(--secondary));
+      }
+    }
+  }
+  .content-wrapper {
+    padding: 24px 0 80px 0;
+    .main-content {
+      background-color: rgba(var(--primary), 0.05);
+      border-radius: 8px;
+      padding: 8px;
+      border: 1px solid rgb(var(--neutral-30));
+
+      //   accordion
+
+      .accordion-item {
+        box-shadow: none;
+        border-radius: 8px;
+        &:focus {
+          box-shadow: none;
+        }
+        border: none;
+        background-color: transparent;
+      }
+
+      .accordion-item:first-of-type {
+        box-shadow: none;
+      }
+      .accordion-item:last-of-type {
+        box-shadow: none;
+      }
+      .accordion-button:not(.collapsed) {
+        color: rgb(var(--neutral-700));
+        background-color: rgb(var(--neutral-0));
+        box-shadow: none;
+      }
+
+      .accordion-body {
+        margin-top: 12px;
+        padding: 16px;
+        @include min-width(1200px) {
+          padding: 24px;
+        }
+      }
+      .accordion-button {
+        border: 1px solid rgb(var(--neutral-30));
+        color: rgb(var(--neutral-700));
+        padding: 16px;
+        border-radius: 8px !important;
+        @include min-width(1200px) {
+          padding: 16px 24px;
+        }
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  .left-bar {
+    position: sticky;
+    top: 180px;
+  }
+}
+
+.bordered-table {
+  thead {
+    tr {
+      border-bottom: 1px solid rgb(var(--neutral-40));
+      border-top: 1px solid rgb(var(--neutral-40));
+    }
+  }
+  tbody {
+    tr {
+      border-bottom: 1px solid rgb(var(--neutral-40));
+      td {
+        color: rgb(var(--neutral-500));
+      }
+    }
+  }
+}
+
+.more-content {
+  display: none;
+  &.show {
+    display: block;
+  }
+}
+
+.author-card {
+  @include min-width(768px) {
+    min-width: 250px;
+  }
+}

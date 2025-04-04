@@ -1,0 +1,47 @@
+.hero-breadcrumb-three {
+  position: relative;
+  padding-top: 125px;
+  padding-bottom: 250px;
+  background-color: rgb(var(--neutral-904));
+  .hero-el {
+    position: absolute;
+    display: none;
+    @include min-width(992px) {
+      display: block;
+    }
+    &.one {
+      top: 30%;
+      left: 5%;
+    }
+    &.two {
+      top: 30%;
+      left: 42%;
+    }
+    &.three {
+      bottom: 5%;
+      right: 6%;
+    }
+  }
+}
+
+.brokerage-calculator {
+  margin-top: -210px;
+  position: relative;
+  z-index: 2;
+}
+
+.amount-box {
+  background-color: rgb(var(--neutral-0));
+  border: 1px solid rgb(var(--neutral-30));
+  border-radius: 50px;
+  padding: 4px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  input {
+    width: 100%;
+    &:focus {
+      outline: none;
+    }
+  }
+}

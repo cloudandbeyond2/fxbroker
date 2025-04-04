@@ -1,0 +1,50 @@
+// footer
+.footer {
+  background-color: rgb(var(--neutral-904));
+  background-image: url(../../images/footer-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  form {
+    background-color: rgba(var(--neutral-0), 0.1);
+    border: 1px solid rgba(var(--neutral-0), 0.1);
+    border-radius: 30px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    &:focus-within {
+      border: 1px solid rgba(var(--neutral-0), 0.3);
+    }
+    input {
+      background-color: transparent;
+      padding: 4px 12px;
+      width: 100%;
+      &:focus {
+        outline: none;
+      }
+      &::placeholder {
+        color: rgb(var(--neutral-0));
+      }
+      color: rgb(var(--neutral-0));
+    }
+    button {
+      flex-shrink: 0;
+      background-color: rgb(var(--secondary));
+      width: 68px;
+      height: 44px;
+      border-radius: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .copyright {
+    border-top: 1px solid rgba(var(--neutral-40), 0.1);
+    padding: 20px 0;
+    @include min-width(1200px) {
+      padding: 24px 0;
+    }
+    @include min-width(1400px) {
+      padding: 32px 0;
+    }
+  }
+}

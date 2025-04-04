@@ -1,0 +1,114 @@
+.find-broker {
+  .steps {
+    padding: 12px;
+    position: relative;
+    z-index: 2;
+    background-color: rgb(var(--neutral-0));
+    border-radius: 12px;
+    box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.06);
+    @include min-width(1200px) {
+      transform: translateY(-50%);
+    }
+    @include max-width(1200px) {
+      margin-top: 60px;
+    }
+    .inner {
+      border-radius: 12px;
+      border: 1px solid rgb(var(--neutral-30));
+      padding: 32px 8px;
+      display: flex;
+      gap: 8px;
+      @include min-width(768px) {
+        gap: 40px;
+      }
+      @include max-width(768px) {
+        flex-wrap: wrap;
+      }
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(var(--primary), 0.05);
+      .step-box {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        width: 98px;
+        height: 84px;
+        text-align: center;
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "";
+          height: 1px;
+          background-color: rgb(var(--neutral-0));
+          top: 25%;
+          @include min-width(768px) {
+            width: 25px;
+            right: -70%;
+          }
+          @include min-width(992px) {
+            width: 50px;
+            right: -60%;
+          }
+          @include min-width(1200px) {
+            width: 60px;
+            right: -50%;
+          }
+          border-bottom: 1.5px dashed rgb(var(--primary));
+        }
+        &:first-of-type {
+          &::after {
+            @include max-width(991px) {
+              right: -40%;
+            }
+          }
+        }
+        &:last-of-type {
+          &::after {
+            display: none;
+          }
+        }
+        .icon {
+          flex-shrink: 0;
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          border: 1px solid rgb(var(--primary));
+          &.check {
+            span {
+              display: none;
+            }
+            i {
+              display: block;
+              margin-top: 3px;
+              font-size: 1.5rem;
+              color: rgb(var(--neutral-0));
+            }
+            background-color: rgb(var(--primary));
+          }
+          span {
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: rgb(var(--primary));
+          }
+          i {
+            display: none;
+          }
+          &.empty {
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bar {
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid rgb(var(--neutral-30));
+    background-color: rgba(var(--primary), 0.05);
+  }
+}

@@ -1,0 +1,13 @@
+// Mixin for min-width media query
+@mixin min-width($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+// Mixin for max-width media query
+@mixin max-width($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
