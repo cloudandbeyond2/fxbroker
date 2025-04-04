@@ -21,7 +21,7 @@
     padding-top: 160px;
   }
   @include max-width(1600px) {
-    background-color: rgb(var(--neutral-904));
+    background-color: rgb(var(--neutral-903));
   }
   padding-bottom: 80px;
   position: relative;
@@ -118,7 +118,7 @@
     }
   }
   .inner {
-    background-color: rgb(var(--neutral-904));
+    background-color: rgb(var(--neutral-903));
     border-radius: 12px;
   }
   .brokers {
@@ -162,7 +162,7 @@
     margin: 0 24px;
   }
   @include max-width(1600px) {
-    background-color: rgb(var(--neutral-904));
+    background-color: rgb(var(--neutral-903));
   }
   border-radius: 16px;
   border-radius: 12px;
@@ -369,7 +369,7 @@
     margin: 0 24px 24px;
   }
   @include max-width(1600px) {
-    background-color: rgb(var(--neutral-904));
+    background-color: rgb(var(--neutral-903));
   }
   background-image: url(../../images/footer-three-bg.png);
   background-size: 100% 100%;

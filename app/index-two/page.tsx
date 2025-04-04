@@ -8,6 +8,7 @@ import Header from "@/components/home-two/Header";
 import Hero from "@/components/home-two/Hero";
 import HighestRatedBroker from "@/components/home-two/HighestRatedBroker";
 import SearchTool from "@/components/home-two/SearchTool";
+import TopBrokers from "@/components/home-two/TopBrokers";
 import React from "react";
 
 const HomeTwo = () => {
@@ -19,14 +20,17 @@ const HomeTwo = () => {
       {/* hero */}
       <Hero />
 
-      {/* <!-- broker search tools --> */}
-      <SearchTool />
+      <TopBrokers />
+    
+      
 
       {/* <!-- empowering investors --> */}
       <Empower />
+        {/* <!-- broker search tools --> */}
+      <SearchTool />
 
       {/* <!-- Highest rated brokers --> */}
-      <HighestRatedBroker />
+      {/* <HighestRatedBroker /> */}
 
       {/* <!-- committed success --> */}
       <CommitedSuccess />
@@ -35,7 +39,7 @@ const HomeTwo = () => {
       <BestBrokers />
 
       {/* <!-- download app --> */}
-      <DownloadApp />
+      {/* <DownloadApp /> */}
 
       {/* <!-- customer feedback --> */}
       <CustomerFeedback />

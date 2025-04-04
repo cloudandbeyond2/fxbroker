@@ -121,9 +121,9 @@ const Footer = () => {
         <div className="row g-3 g-md-0 copyright">
           <div className="col-md-6">
             <p className="m-text text-n30">
-              Copyright © 2024{" "}
+              Copyright © 2025{" "}
               <Link href="/" className="text-secondary">
-                BrokR
+              Forex
               </Link>
               . All rights reserved.
             </p>
@@ -135,7 +135,7 @@ const Footer = () => {
                   <i className="ph ph-facebook-logo"></i>
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#">
                   <i className="ph ph-twitter-logo"></i>
                 </a>
@@ -149,7 +149,7 @@ const Footer = () => {
                 <a href="#">
                   <i className="ph ph-twitch-logo"></i>
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a href="#">
                   <i className="ph ph-linkedin-logo"></i>

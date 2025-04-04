@@ -151,7 +151,7 @@ const Header = () => {
                         </div>
                         <div className="col-12">
                           <a className="d-flex align-items-center fw-semibold text-primary gap-2" href="#">
-                            BrokR Awards 2024 <i className="ph ph-arrow-right"></i>
+                            BrokR Awards 2025 <i className="ph ph-arrow-right"></i>
                           </a>
                         </div>
                       </div>
@@ -203,9 +203,14 @@ const Header = () => {
               </button>
               <li className="dropdown-item">
                 <button>
-                  Home <i className="ph ph-caret-down"></i>
+                  
+                
+                <Link href="/">
+                  Home 
+                  {/* <i className="ph ph-caret-down"></i> */}
+                </Link>
                 </button>
-                <ul className="dropdown-list">
+                {/* <ul className="dropdown-list">
                   <li onClick={() => setMobileMenu(false)}>
                     <Link href="/">Home One</Link>
                   </li>
@@ -215,7 +220,7 @@ const Header = () => {
                   <li onClick={() => setMobileMenu(false)}>
                     <Link href="/index-three">Home Three</Link>
                   </li>
-                </ul>
+                </ul> */}
               </li>
               <li className="broker-review dropdown-item">
                 <button className="broker-review-dropdown-btn">
@@ -253,6 +258,7 @@ const Header = () => {
                         </li>
                       </ul>
                     </div>
+
                     <div className="col-12 col-xl-3 col-xxl-5col">
                       <h5 className="mb-3 mb-lg-4 fw-semibold">Best forex brokers</h5>
                       <ul>
@@ -283,6 +289,7 @@ const Header = () => {
                         </li>
                       </ul>
                     </div>
+
                     <div className="col-12 col-xl-3 col-xxl-5col">
                       <h5 className="mb-3 mb-lg-4 fw-semibold">Best CFD brokers</h5>
                       <ul>

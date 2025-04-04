@@ -1,49 +1,51 @@
-import React from "react";
-import logo from "@/public/images/logo.png";
 import Image from "next/image";
+import React from "react";
+import Logo from "@/public/images/logo.png";
 import Link from "next/link";
 const Footer = () => {
   return (
-    <footer className="footer footer-three pt-120">
+    <footer className="footer footer-two pt-120">
       <div className="container">
-        <div data-aos="fade-in" className="row g-4 pb-120 top-row mb-120 pt-4">
-          <div className="col-md-6 d-flex align-items-center">
+        <div className="row g-3 pb-120">
+          <div className="col-md-6 col-lg-4 d-flex align-items-center">
             <Link href="/" className="d-inline-flex">
-              <Image src={logo} alt="" />
+              <Image src={Logo} alt="" />
             </Link>
           </div>
-          <div className="col-md-6 d-flex flex-wrap gap-4 align-items-center justify-content-lg-end">
-            <h5 className="text-white fw-semibold">Follow Us</h5>
-            <ul className="social-links">
-              <li>
-                <a href="#">
-                  <i className="ph ph-facebook-logo"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="ph ph-twitter-logo"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="ph ph-pinterest-logo"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="ph ph-twitch-logo"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="ph ph-linkedin-logo"></i>
-                </a>
-              </li>
-            </ul>
+          <div className="col-md-6 col-lg-4 d-flex align-items-center">
+            <h4 className="text-white fw-semibold text-center">Get in Touch with Support Team</h4>
+          </div>
+          <div className="col-md-6 col-lg-4 d-flex justify-content-lg-end">
+            <Link href="/contact-us" className="btn btn-secondary fw-semibold d-inline-flex align-items-center gap-2">
+              Contact Us <i className="ph ph-arrow-right"></i>
+            </Link>
           </div>
         </div>
-        <div data-aos="fade-in" className="row g-4 pb-120">
+        <div className="row g-3 pb-120">
+          <div className="col-md-6 col-xl-3">
+            <h4 className="text-white mb-3 mb-lg-4 fw-semibold">Contact</h4>
+            <div className="d-flex flex-column gap-3 text-n30">
+              <div className="d-flex align-items-center gap-3">
+                <div className="icon-box">
+                  <i className="ph ph-phone-call"></i>
+                </div>
+                <p className="text-white m-text">(316) 555-0116</p>
+              </div>
+              <div className="d-flex align-items-center gap-3">
+                <div className="icon-box">
+                  <i className="ph ph-envelope-open"></i>
+                </div>
+                <p className="text-white m-text">info@brokr.com</p>
+              </div>
+              <div className="d-flex align-items-center gap-3">
+                <div className="icon-box">
+                  <i className="ph ph-map-pin"></i>
+                </div>
+                <p className="text-white m-text">123 Main Street, City, Country</p>
+              </div>
+            </div>
+          </div>
+
           <div className="col-md-6 col-xl-3">
             <h4 className="text-white mb-3 mb-lg-4 fw-semibold">Quick Link</h4>
             <ul className="d-flex flex-column gap-2 text-n30">
@@ -104,29 +106,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-md-6 col-xl-3">
-            <h4 className="text-white mb-3 mb-lg-4 fw-semibold">Contact</h4>
-            <div className="d-flex flex-column gap-3 text-n30">
-              <div className="d-flex align-items-center gap-3">
-                <div className="icon-box">
-                  <i className="ph ph-phone-call"></i>
-                </div>
-                <p className="text-white m-text">(316) 555-0116</p>
-              </div>
-              <div className="d-flex align-items-center gap-3">
-                <div className="icon-box">
-                  <i className="ph ph-envelope-open"></i>
-                </div>
-                <p className="text-white m-text">info@brokr.com</p>
-              </div>
-              <div className="d-flex align-items-center gap-3">
-                <div className="icon-box">
-                  <i className="ph ph-map-pin"></i>
-                </div>
-                <p className="text-white m-text">123 Main Street, City, Country</p>
-              </div>
-            </div>
-          </div>
+
           <div className="col-md-6 col-xl-3">
             <h4 className="text-white mb-3 mb-lg-4 fw-semibold">Newsletter</h4>
             <p className="text-n30 m-text mb-32">Subscribe our newsletter to get our latest update &amp; news</p>
@@ -141,9 +121,9 @@ const Footer = () => {
         <div className="row g-3 g-md-0 copyright">
           <div className="col-md-6">
             <p className="m-text text-n30">
-              Copyright © 2024{" "}
+              Copyright © 2025{" "}
               <Link href="/" className="text-secondary">
-                BrokR
+              Forex
               </Link>
               . All rights reserved.
             </p>
@@ -155,7 +135,7 @@ const Footer = () => {
                   <i className="ph ph-facebook-logo"></i>
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#">
                   <i className="ph ph-twitter-logo"></i>
                 </a>
@@ -169,7 +149,7 @@ const Footer = () => {
                 <a href="#">
                   <i className="ph ph-twitch-logo"></i>
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a href="#">
                   <i className="ph ph-linkedin-logo"></i>

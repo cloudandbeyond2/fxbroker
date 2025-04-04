@@ -251,9 +251,12 @@
               position: absolute;
               top: 100%;
               left: 50%;
+              // left: 61%;
               transform: translateX(-50%);
               max-width: 1296px;
-              min-width: 1200px;
+              min-width: 1200px;       
+              // max-width: 269px;
+              // min-width: 270px;
               width: 100%;
               min-height: 340px;
             }

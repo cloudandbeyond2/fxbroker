@@ -166,7 +166,7 @@ const SingleBlog = ({ params }: { params: { title: string } }) => {
                           <i className="ph ph-facebook-logo"></i>
                         </a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a href="#">
                           <i className="ph ph-twitter-logo"></i>
                         </a>
@@ -180,7 +180,7 @@ const SingleBlog = ({ params }: { params: { title: string } }) => {
                         <a href="#">
                           <i className="ph ph-twitch-logo"></i>
                         </a>
-                      </li>
+                      </li> */}
                       <li>
                         <a href="#">
                           <i className="ph ph-linkedin-logo"></i>
@@ -454,7 +454,7 @@ const SingleBlog = ({ params }: { params: { title: string } }) => {
                       <i className="ph ph-facebook-logo"></i>
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="#">
                       <i className="ph ph-twitter-logo"></i>
                     </a>
@@ -468,7 +468,7 @@ const SingleBlog = ({ params }: { params: { title: string } }) => {
                     <a href="#">
                       <i className="ph ph-twitch-logo"></i>
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a href="#">
                       <i className="ph ph-linkedin-logo"></i>

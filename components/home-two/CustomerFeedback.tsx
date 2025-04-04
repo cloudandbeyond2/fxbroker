@@ -13,7 +13,7 @@ const CustomerFeedback = () => {
             <Image src={feedBackImg} alt="" />
           </div>
           <div data-aos="zoom-in" className="col-md-7 col-lg-6 col-xl-5 offset-xl-1">
-            <h2 className="display-4 fw-semibold mb-40">Customer Feedback That Makes Us Proud</h2>
+            <h2 className="display-4 fw-semibold mb-40" style={{left: "291px"}}> Customer Feedback That Makes Us Proud</h2>
             <Swiper loop autoplay={{ delay: 3500 }} slidesPerView={1} navigation={{ nextEl: ".feedback-next", prevEl: ".feedback-prev" }} modules={[Autoplay, Navigation]} className="swiper feedback-slider mb-40">
               <SwiperSlide className="swiper-slide">
                 <div className="feedback-card">
