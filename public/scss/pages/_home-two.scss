@@ -16,7 +16,8 @@
     height: 100%;
     content: "";
     z-index: 1;
-    background: linear-gradient(270deg, rgba(0, 41, 34, 0.3) 0%, rgba(0, 41, 34, 0.5) 38.69%, rgba(0, 41, 34, 0.7) 67.76%, rgba(0, 41, 34, 0.9) 99.04%);
+    background: linear-gradient(270deg, rgba(0, 41, 34, 0.3) 0%, rgb(13 24 50 / 47%) 38.69%, rgb(16 30 64 / 56%) 67.76%, rgb(13 24 50) 99.04%);
+    // background: linear-gradient(270deg, rgba(0, 41, 34, 0.3) 0%, rgba(0, 41, 34, 0.5) 38.69%, rgba(0, 41, 34, 0.7) 67.76%, rgba(0, 41, 34, 0.9) 99.04%);
   }
   .content {
     position: absolute;

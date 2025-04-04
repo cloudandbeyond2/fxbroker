@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className="hero-two">
       <Swiper loop autoplay={{ delay: 5000 }} speed={2500} slidesPerView={1} effect="fade" pagination={{ el: ".banner-two-pagination", clickable: true }} modules={[Autoplay, Pagination, EffectFade]} className="swiper home-two-hero-swiper">
-        <SwiperSlide className="swiper-slide" style={{ backgroundImage: "url(/images/home-two-hero-1.png)" }}></SwiperSlide>
+        <SwiperSlide className="swiper-slide" style={{ backgroundImage: "url(/images/moder.jpg)" }}></SwiperSlide>
         <SwiperSlide className="swiper-slide" style={{ backgroundImage: "url(/images/home-two-hero-2.png)" }}></SwiperSlide>
         <SwiperSlide className="swiper-slide" style={{ backgroundImage: "url(/images/home-two-hero-3.png)" }}></SwiperSlide>
         <SwiperSlide className="swiper-slide" style={{ backgroundImage: "url(/images/home-two-hero-4.png)" }}></SwiperSlide>
