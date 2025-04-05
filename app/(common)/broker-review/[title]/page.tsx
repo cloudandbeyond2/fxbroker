@@ -15,6 +15,7 @@ import Chart from "@/components/broker-review/Chart";
 import { brokers } from "@/components/home-two/HighestRatedBroker";
 import { Metadata } from "next";
 import Link from "next/link";
+import BestBrokerTwo from "../../best-brokers-two/page";
 export const formatString = (str: string) => {
   return str.split(" ").join("-").toLowerCase();
 };
@@ -33,6 +34,8 @@ const BrokerReview = ({ params }: { params: { title: string } }) => {
   return (
     <main>
       <Hero title={broker.title} />
+      <BestBrokerTwo />  {/* Add this line */}
+
 
       {/* review */}
       <section className="broker-reviews overflow-visible">
@@ -179,70 +182,143 @@ const BrokerReview = ({ params }: { params: { title: string } }) => {
                                     </div>
                                   </div>
                                 </div>
-                                <div className="bb-n40">
-                                  <div className="d-flex align-items-center gap-1">
-                                    <span className="text-primary fs-4 d-flex align-items-center">
-                                      <i className="ph ph-users-three"></i>
-                                    </span>
-                                    <p className="l-text">
-                                      <span className="fw-medium">234,548</span> people chose this broker
-                                    </p>
-                                  </div>
-                                </div>
-                                <div className="bb-n40 row">
-                                  <div className="pe-3 col-sm-6 br-n30">
-                                    <table className="w-100">
-                                      <tbody>
-                                        <tr>
-                                          <td className="w-75 py-1">
-                                            <p className="m-text fw-medium">Fee Level:</p>
-                                          </td>
-                                          <td className="w-25 py-1">
-                                            <p className="m-text fw-medium text-end whitespace-nowrap">$0</p>
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td className="w-75 py-1">
-                                            <p className="m-text fw-medium">Inactivity Fee:</p>
-                                          </td>
-                                          <td className="w-25 py-1">
-                                            <p className="m-text fw-medium text-end">Low</p>
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td className="w-75 py-1">
-                                            <p className="m-text fw-medium">Index CFD Fee:</p>
-                                          </td>
-                                          <td className="w-25 py-1">
-                                            <p className="m-text fw-medium text-end">Low</p>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </div>
-                                  <div className="col-sm-6">
-                                    <table className="px-3 w-100">
-                                      <tbody>
-                                        <tr>
-                                          <td className="w-75 py-1">
-                                            <p className="m-text fw-medium">Investor Protection:</p>
-                                          </td>
-                                          <td className="w-25 py-1">
-                                            <p className="m-text fw-medium text-end">$0</p>
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td className="w-75 py-1">
-                                            <p className="m-text fw-medium">Mobile Platform:</p>
-                                          </td>
-                                          <td className="w-25 py-1">
-                                            <p className="m-text fw-medium whitespace-nowrap text-end">1-3 days</p>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </div>
-                                </div>
+                                <div className="row g-4">
+  {/* First Broker */}
+  <div className="col-md-6">
+    <div className="bb-n40">
+      <div className="d-flex align-items-center gap-1">
+        <span className="text-primary fs-4 d-flex align-items-center">
+          <i className="ph ph-users-three"></i>
+        </span>
+        <p className="l-text">
+          <span className="fw-medium">234,548</span> people chose this broker
+        </p>
+      </div>
+    </div>
+    <div className="bb-n40 row">
+      <div className="pe-3 col-sm-6 br-n30">
+        <table className="w-100">
+          <tbody>
+            <tr>
+              <td className="w-75 py-1">
+                <p className="m-text fw-medium">Fee Level:</p>
+              </td>
+              <td className="w-25 py-1">
+                <p className="m-text fw-medium text-end whitespace-nowrap">$0</p>
+              </td>
+            </tr>
+            <tr>
+              <td className="w-75 py-1">
+                <p className="m-text fw-medium">Inactivity Fee:</p>
+              </td>
+              <td className="w-25 py-1">
+                <p className="m-text fw-medium text-end">Low</p>
+              </td>
+            </tr>
+            <tr>
+              <td className="w-75 py-1">
+                <p className="m-text fw-medium">Index CFD Fee:</p>
+              </td>
+              <td className="w-25 py-1">
+                <p className="m-text fw-medium text-end">Low</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div className="col-sm-6">
+        <table className="px-3 w-100">
+          <tbody>
+            <tr>
+              <td className="w-75 py-1">
+                <p className="m-text fw-medium">Investor Protection:</p>
+              </td>
+              <td className="w-25 py-1">
+                <p className="m-text fw-medium text-end">$0</p>
+              </td>
+            </tr>
+            <tr>
+              <td className="w-75 py-1">
+                <p className="m-text fw-medium">Mobile Platform:</p>
+              </td>
+              <td className="w-25 py-1">
+                <p className="m-text fw-medium whitespace-nowrap text-end">1-3 days</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  {/* Second Broker */}
+  <div className="col-md-6">
+    <div className="bb-n40">
+      <div className="d-flex align-items-center gap-1">
+        <span className="text-primary fs-4 d-flex align-items-center">
+          <i className="ph ph-users-three"></i>
+        </span>
+        <p className="l-text">
+          <span className="fw-medium">198,752</span> people chose this broker
+        </p>
+      </div>
+    </div>
+    <div className="bb-n40 row">
+      <div className="pe-3 col-sm-6 br-n30">
+        <table className="w-100">
+          <tbody>
+            <tr>
+              <td className="w-75 py-1">
+                <p className="m-text fw-medium">Fee Level:</p>
+              </td>
+              <td className="w-25 py-1">
+                <p className="m-text fw-medium text-end whitespace-nowrap">$5</p>
+              </td>
+            </tr>
+            <tr>
+              <td className="w-75 py-1">
+                <p className="m-text fw-medium">Inactivity Fee:</p>
+              </td>
+              <td className="w-25 py-1">
+                <p className="m-text fw-medium text-end">Medium</p>
+              </td>
+            </tr>
+            <tr>
+              <td className="w-75 py-1">
+                <p className="m-text fw-medium">Index CFD Fee:</p>
+              </td>
+              <td className="w-25 py-1">
+                <p className="m-text fw-medium text-end">Medium</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div className="col-sm-6">
+        <table className="px-3 w-100">
+          <tbody>
+            <tr>
+              <td className="w-75 py-1">
+                <p className="m-text fw-medium">Investor Protection:</p>
+              </td>
+              <td className="w-25 py-1">
+                <p className="m-text fw-medium text-end">$20,000</p>
+              </td>
+            </tr>
+            <tr>
+              <td className="w-75 py-1">
+                <p className="m-text fw-medium">Mobile Platform:</p>
+              </td>
+              <td className="w-25 py-1">
+                <p className="m-text fw-medium whitespace-nowrap text-end">Instant</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
                                 <a href="#" className="btn btn-secondary fw-semibold f-center gap-2">
                                   Visit Oanda <i className="ph ph-arrow-right"></i>
                                 </a>
@@ -833,6 +909,7 @@ const BrokerReview = ({ params }: { params: { title: string } }) => {
                               <>
                                 <div className="bb-n40 pb-0"></div>
                                 <p className="m-text text-n500 mb-40">Oanda charges no deposit and account fees. You can withdraw your money free of charge to a debit/credit card, but bank transfer withdrawals are quite costly.</p>
+
 
                                 <div className="box-lg mb-32">
                                   <div className="row">
@@ -1873,7 +1950,7 @@ const BrokerReview = ({ params }: { params: { title: string } }) => {
               </div>
               <div className="col-lg-4">
                 <div className="box primary left-bar">
-                  <h4 className="fw-semibold bb-dashed">Best brokers in World</h4>
+                  <h4 className="fw-semibold bb-dashed">Top 5 brokers</h4>
                   <div className="tabs">
                     <ul className="nav nav-pills left bg-white mb-4" id="pills-tab" role="tablist">
                       <li className="nav-item" role="presentation">

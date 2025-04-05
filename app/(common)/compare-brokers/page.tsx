@@ -1,5 +1,18 @@
 import React from "react";
-
+import { brokers } from "@/components/home-two/HighestRatedBroker";
+import Image from "next/image";
+// import React from "react";
+import invest1 from "@/public/images/investment/investment-1.png";
+import invest2 from "@/public/images/investment/investment-2.png";
+import invest3 from "@/public/images/investment/investment-3.png";
+import invest4 from "@/public/images/investment/investment-4.png";
+import invest5 from "@/public/images/investment/investment-5.png";
+import invest6 from "@/public/images/investment/investment-6.png";
+import invest7 from "@/public/images/investment/investment-7.png";
+import invest8 from "@/public/images/investment/investment-8.png";
+import { formatString } from "@/app/(common)/broker-review/[title]/page";
+import Link from "next/link";
+// import Image from "next/image";
 const CompareBrokerPage = () => {
   return (
     <main>
@@ -26,6 +39,133 @@ const CompareBrokerPage = () => {
           </div>
         </div>
       </section>
+
+      <section className="pt-120 pb-120">
+        <div className="container">
+
+      <div className="col-lg-8">
+              <div className="d-flex gap-3 flex-wrap justify-content-between align-items-center mb-40">
+                <p className="m-text text-n500">Showing 1-8 of 100 results</p>
+                <div className="d-flex gap-2 align-items-center">
+                  <span>Sort By:</span>
+                  <select name="sortby" id="sortby" className="select">
+                    <option value="newest">Newest</option>
+                    <option value="oldest">Oldest</option>
+                  </select>
+                </div>
+              </div>
+              <div className="row g-3 g-xxl-4 mb-40">
+                {brokers.slice(0, 6).map(({ image, rating, title, users }) => (
+                  <div key={title} data-aos="fade-in" className="col-xxl-6">
+                    <div className="broker-box">
+                      <div className="inner">
+                        <div className="d-flex align-items-center gap-3 bb-n40">
+                          <div className="img f-center">
+                            <Image width="52" height="52" src={image} alt="" />
+                          </div>
+                          <div>
+                            <h4 className="fw-semibold mb-3">{title}</h4>
+                            <div className="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                              <div className="d-flex align-items-center gap-1">
+                                <span className="text-secondary d-flex align-items-center fs-4">
+                                  <i className="ph ph-star-fill"></i>
+                                </span>
+                                <p className="l-text fw-medium">
+                                  {rating}/<span className="fw-normal">5</span>
+                                </p>
+                              </div>
+                              <div className="d-flex align-items-center gap-1">
+                                <span className="text-primary d-flex align-items-center fs-4">
+                                  <i className="ph ph-bookmark-simple"></i>
+                                </span>
+                                <p className="l-text">Save Wishlist&apos;s</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="bb-n40">
+                          <div className="d-flex align-items-center gap-1">
+                            <span className="text-primary fs-4 d-flex align-items-center">
+                              <i className="ph ph-users-three"></i>
+                            </span>
+                            <p className="l-text">
+                              <span className="fw-medium">{users}</span> people chose this broker
+                            </p>
+                          </div>
+                        </div>
+                        <div className="bb-n40">
+                          <table className="w-100">
+                            <tbody className="">
+                              <tr>
+                                <td className="w-75 py-1">
+                                  <p className="m-text fw-medium">Fee Level:</p>
+                                </td>
+                                <td className="w-25 py-1">
+                                  <p className="m-text fw-medium">
+                                    Low <span className="text-brown">4.5</span>/5
+                                  </p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td className="w-75 py-1">
+                                  <p className="m-text fw-medium">Inactivity Fee:</p>
+                                </td>
+                                <td className="w-25 py-1">
+                                  <p className="m-text fw-medium">No</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td className="w-75 py-1">
+                                  <p className="m-text fw-medium">Investor Protection:</p>
+                                </td>
+                                <td className="w-25 py-1">
+                                  <p className="m-text fw-medium">No</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td className="w-75 py-1">
+                                  <p className="m-text fw-medium">Mobile Platform:</p>
+                                </td>
+                                <td className="w-25 py-1">
+                                  <p className="m-text fw-medium">
+                                    Yes <span className="text-brown">4.7</span>/5
+                                  </p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <a href="#" className="btn btn-secondary fw-semibold f-center gap-2">
+                          Visit Broker <i className="ph ph-arrow-right"></i>
+                        </a>
+                        <Link href={`/broker-review/${formatString(title)}`} className="text-primary pt-3 fw-semibold f-center gap-2">
+                          Details Review <i className="ph ph-arrow-right"></i>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="d-flex justify-content-center pagination-list">
+                <button>
+                  <i className="ph ph-caret-left-bold"></i>
+                </button>
+                <a href="#">1</a>
+                <a href="#" className="active">
+                  2
+                </a>
+                <a href="#">3</a>
+                <a href="#">
+                  <i className="ph ph-dots-three-bold"></i>
+                </a>
+                <button>
+                  <i className="ph ph-caret-right-bold"></i>
+                </button>
+              </div>
+            </div>
+
+            </div>
+            </section>
 
       {/* <!-- compare brokers --> */}
       <section className="pt-120 pb-120 compare-brokers">
